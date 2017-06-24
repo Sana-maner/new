@@ -8,14 +8,10 @@
   <body>
     <a-scene>
       <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-entity>
-  <a-entity position="5 0 0"></a-entity>
-  <a-animation attribute="rotation"
-               dur="10000"
-               fill="forwards"
-               to="0 360 0"
-               repeat="indefinite"></a-animation>
-</a-entity>
+     <a-assets>
+       <img id="tar" src="download(7).jpg"></img>
+      </a-assets>
+      <a-plane src="#tar" position="2 0 5"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
     </a-scene>
   </body>
