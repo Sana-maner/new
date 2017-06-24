@@ -12,7 +12,10 @@
         <video id="video" src="https://ucarecdn.com/bcece0a8-86ce-460e-856b-40dac4875f15/"
                autoplay loop crossorigin></video>
       </a-assets>
-
+      
+<a-entity geometry="primitive: cone; radiusTop: 1">
+  <a-animation attribute="geometry.radiusTop" to="0.5"></a-animation>
+</a-entity>
       <a-videosphere src="#video" rotation="0 180 0"></a-videosphere>
     </a-scene>
   </body>
